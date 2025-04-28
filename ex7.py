@@ -1,5 +1,10 @@
-#Imagina que você consegue atender entre 20 e 30 cães durante a semana no seu Pet Shop.
-#Se atender menos do que 20 cães, o pet shop ficou ocioso, se você atendeu mais do que
-#30 significa que o cliente foi até o local mas não pode ser atendido. Faça um algoritmo para
-#verificar quantos cães foram atendidos e informar se a petshop ficou ocioso, se está normal
-#ou se está com carga alta de demanda.
+caes_atendidos = int(input("Informe quantos cães foram atendidos: "))
+
+if caes_atendidos < 20:
+    print("Pet shop está ocioso")
+elif 20 <= caes_atendidos <= 30:
+    print("Pet shop está normal")
+elif caes_atendidos > 30:
+    print("Pet shop com carga alta de demanda")
+else:
+    print("Número inválido, verifique o valor informado")
